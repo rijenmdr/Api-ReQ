@@ -16,19 +16,19 @@ const ResponseStatus = () => {
         >
             {
                 status &&
-                <Text fontSize="smaller">
+                <Text fontSize="xs">
                     Status: {' '}
                     <Text as="span" color="green.400">{status}</Text>
                 </Text>
             }
             {
                 duration &&
-                <Text fontSize="smaller" mx={3}>
+                <Text fontSize="xs" mx={3}>
                     Time: {' '}
                     <Text as="span" color="green.400">{duration}ms</Text>
                 </Text>
             }
-            <Text fontSize="smaller">
+            <Text fontSize="xs">
                 Size: {' '}
                 <Text as="span" color="green.400">{prettyBytes(size)}</Text>
             </Text>

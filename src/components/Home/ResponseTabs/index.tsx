@@ -2,6 +2,7 @@ import { Box, Heading, Text } from '@chakra-ui/react';
 
 import { useHome } from '@/zustand/home';
 import ResponseJson from './ResponseJson';
+import ResponseStatus from './ResponseStatus';
 
 const Response = () => {
   const { error } = useHome();
@@ -15,8 +16,8 @@ const Response = () => {
         borderColor="whiteAlpha.300"
         borderRadius="8px"
       >
+        <ResponseStatus/>
         <Box
-          p={2}
           overflow="auto"
         >
           {
